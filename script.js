@@ -1,4 +1,6 @@
 
+
+
 document.addEventListener("submit", results);
 
 function results(e){
@@ -48,12 +50,50 @@ function results(e){
 let memeSection = document.querySelector('article');
 
 memeSection.addEventListener("click", function(e){
-    if(e.target.tagName === 'DIV'){
+    console.log(e.target);
+    if(e.target.className === 'remove_button' || e.target.className === 'IMG'){
         e.target.parentElement.remove();
-    }
+    } 
 });
 
 
 
 
 
+
+/*
+
+
+
+function deleteMeme(e){
+    let toDelete = e.target.id;
+    toDelete.parentItem.remove();
+}
+
+
+
+
+    let memeImg = document.createElement('img');
+    memeImg.src = image_link;
+    document.getElementByID('dispalyed_memes').appendChild(memeImg);
+
+
+let image = document.getElementById('image');
+    image.src = image_link;
+
+
+
+
+    document.getElementById('meme_from').reset();
+
+    let display=document.getElementById('display')
+    display.innerHTML=image_link;
+
+form.onsubmit = function(e){
+    e.preventDefault();
+    sessionStorage.setItem('image_link', document.getElementById('image_link').value)
+    sessionStorage.setItem('top_text', document.getElementById('top_text').value)
+    sessionStorage.setItem('bottom_text', document.getElementById('bottom_text').value)
+
+}
+*/
