@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Meme Generator</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="wrapper">
+
+        <header><h1>LET'S MAKE A MEME</h1></header>
+
+        <section class="form">
+              <form name="meme_form" method="POST" id="meme_form">
+                <label for="image_link">Image URL:</label>
+                <input type="url" id="image_link" name="image_link" required class="input_box" placeholder="(Required) Add an image URL"><br><br>
+                <label for="top_text">Top text:</label>
+                <input type="text" id="top_text" name="top_text" required class="input_box" maxlength="30" placeholder="(Required) Top line of text"><br><br>
+                <label for="bottom_text">Bottom text:</label>
+                <input type="text" id="bottom_text" name="bottom_text" class="input_box" maxlength="30" placeholder="Bottom line of text"><br><br>
+                <div class="submit">
+                    <input type="submit" value="Let's Do It" id="submit_button"><br>
+                </div>
+              </form>
+        </section>
+    </section>
+
+    <article>
+
+    </article>
+
+</body>
+</html>
